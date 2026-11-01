@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Link Cá Nhân</title>
+    <!-- Thêm font chữ và icon -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #f3f4f6;
+            color: #1f2937;
+            display: flex;
+            justify-content: center;
+            padding: 20px 10px;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background: #ffffff;
+            min-height: 100vh;
+            border-radius: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Phần Header Gradient */
+        .profile-header {
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%); /* Hiệu ứng màu gradient sáng */
+            padding: 40px 20px 30px 20px;
+            text-align: center;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        .avatar-container {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 15px auto;
+            border-radius: 50%;
+            padding: 3px;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .avatar-container img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .profile-name {
+            font-size: 20px;
+            font-weight: 700;
+            color: #111827;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            margin-bottom: 10px;
+        }
+
+        .profile-name i {
+            color: #3b82f6; /* Màu tích xanh */
+            font-size: 16px;
+        }
+
+        .profile-bio {
+            font-size: 14px;
+            color: #4b5563;
+            line-height: 1.6;
+        }
+
+        /* Phần Danh sách Liên kết */
+        .links-section {
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 5px;
+        }
+
+        .link-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            padding: 14px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: #1f2937;
+            font-weight: 500;
+            font-size: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .link-button i {
+            position: absolute;
+            left: 20px;
+            font-size: 18px;
+        }
+
+        .link-button:hover {
+            background: #f9fafb;
+            border-color: #d1d5db;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        /* Màu sắc riêng cho icon các mạng xã hội */
+        .link-button.facebook i { color: #1877f2; }
+        .link-button.tiktok i { color: #000000; }
+        .link-button.youtube i { color: #ff0000; }
+        .link-button.zalo i { color: #0068ff; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Khung thông tin cá nhân -->
+        <div class="profile-header">
+            <div class="avatar-container">
+                <!-- Thay link ảnh đại diện của bạn vào đây -->
+                <img src="https://via.placeholder.com/150" alt="Avatar">
+            </div>
+            <div class="profile-name">
+                Tên Của Bạn <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div class="profile-bio">
+                Đơn Vị Công Ty Của Bạn<br>
+                ⭐ Chuyên Hỗ Trợ Dịch Vụ Mạng Xã Hội<br>
+                ⭐ Đào Tạo Học Viên Trực Tiếp or Online 🎓<br>
+                📱 0xxxx.xxx.xxx or 0xxxx.xxx.xxx ☎️
+            </div>
+        </div>
+
+        <!-- Danh sách nút liên kết -->
+        <div class="links-section">
+            <div class="section-title">Liên hệ & Mạng xã hội</div>
+            <hr style="border: none; border-top: 1px solid #e5e7eb; width: 40px; margin: 0 auto 15px auto;">
+
+            <!-- Link Facebook -->
+            <a href="LINK_FACEBOOK_CUA_BAN" target="_blank" class="link-button facebook">
+                <i class="fa-brands fa-facebook"></i> Facebook
+            </a>
+
+            <!-- Link TikTok -->
+            <a href="LINK_TIKTOK_CUA_BAN" target="_blank" class="link-button tiktok">
+                <i class="fa-brands fa-tiktok"></i> TikTok
+            </a>
+
+            <!-- Link YouTube -->
+            <a href="LINK_YOUTUBE_CUA_BAN" target="_blank" class="link-button youtube">
+                <i class="fa-brands fa-youtube"></i> YouTube
+            </a>
+
+            <!-- Link Zalo 1 -->
+            <a href="LINK_ZALO_CUA_BAN" target="_blank" class="link-button zalo">
+                <i class="fa-solid fa-comment-dots"></i> Zalo Đào Tạo
+            </a>
+
+            <!-- Link Zalo 2 -->
+            <a href="LINK_ZALO_CUA_BAN" target="_blank" class="link-button zalo">
+                <i class="fa-solid fa-headset"></i> Chăm Sóc Khách Hàng
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
